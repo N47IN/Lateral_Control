@@ -7,8 +7,7 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/Crossroad.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/RoadLine.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/buildings/protos/SimpleBuilding.proto"
-EXTERNPROTO "webots://projects/vehicles/protos/tesla/TeslaModel3.proto"
-EXTERNPROTO "webots://projects/objects/traffic/protos/TrafficCone.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/TrafficCone.proto"
 
 WorldInfo {
   info [
@@ -30,7 +29,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation 0.32659204849509993 0.20758484621394682 -0.9220879380417609 2.081330337334315
-  position 50.78701058751017 202.67750716474475 82.13169965238461
+  position 380.59087209912855 906.1388706465013 711.436853397554
   near 3
   follow "vehicle"
 }
@@ -50,63 +49,6 @@ Floor {
     roughness 1
     metalness 0
   }
-}
-TrafficCone {
-  translation -98.49 180.96 0
-  name "traffic cone(3)"
-}
-TeslaModel3 {
-  translation -16.3565 128.18 -0.273685
-  rotation -0.004733776587120854 -0.011805517334146616 -0.9999191072880329 0.6139779820013663
-  controller "<extern>"
-  sensorsSlotFront [
-    Lidar {
-      fieldOfView 3.14
-      numberOfLayers 1
-      maxRange 9
-    }
-    InertialUnit {
-    }
-    GPS {
-    }
-  ]
-  sensorsSlotCenter [
-    InertialUnit {
-      name "inertial unit(1)"
-    }
-  ]
-}
-TeslaModel3 {
-  translation 23.76803999397394 106.91345597423094 0.1283555812610115
-  rotation -0.008503627876934693 -0.02785098585957372 -0.9995759155259695 0.5322812626933827
-  name "vehicle(1)"
-  sensorsSlotFront [
-    InertialUnit {
-    }
-    GPS {
-    }
-  ]
-  sensorsSlotCenter [
-    InertialUnit {
-      name "inertial unit(1)"
-    }
-  ]
-}
-TeslaModel3 {
-  translation 23.14998649156621 93.02619792168885 0.12835584105127434
-  rotation -0.0075203247241392825 -0.028025513164799665 -0.9995789190093463 0.5339647320265697
-  name "vehicle(2)"
-  sensorsSlotFront [
-    InertialUnit {
-    }
-    GPS {
-    }
-  ]
-  sensorsSlotCenter [
-    InertialUnit {
-      name "inertial unit(1)"
-    }
-  ]
 }
 Crossroad {
   translation 631.516933 313.69262 0.01
@@ -3125,10 +3067,6 @@ Road {
     "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
   ]
   splineSubdivision 0
-}
-TrafficCone {
-  translation -399.73 -56.41 0
-  name "traffic cone(2)"
 }
 Road {
   translation -149.865245 39.794649 0.01
@@ -7083,9 +7021,4 @@ DEF IIT_Lake Pose {
   ]
 }
 TrafficCone {
-  translation 251.33 116.59 0
-}
-TrafficCone {
-  translation -172.82 30.68 0
-  name "traffic cone(1)"
 }

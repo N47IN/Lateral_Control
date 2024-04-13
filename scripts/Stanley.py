@@ -1,7 +1,6 @@
 import numpy as np
 import math
 from scipy.optimize import minimize, Bounds
-from RRT_dubins import RRTDubins
 import pandas as pd 
 from BicycleModel import KinematicBicycleModel
 

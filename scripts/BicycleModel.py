@@ -29,7 +29,7 @@ class KinematicBicycleModel:
         self.max_steer = max_steer
 
 
-    def update(self, x: float, y: float, yaw: float, velocity: float, acceleration: float, steering_angle: float) -> tuple[float, ...]:
+    def update(self, x: float, y: float, yaw: float, velocity: float, acceleration: float, steering_angle: float):
         """
         Summary
         -------

@@ -39,6 +39,7 @@ k = 1
 
 while driver.step()!=-1:
    curr_pos = gps.getValues()
+   print(curr_pos)
 
    if step == 120:
 
@@ -54,7 +55,7 @@ while driver.step()!=-1:
       coordinates_bezier = np.asarray(AutoDrive.bezier_curve(coordinates_cartesian))
       coordinates_cartesian = np.delete(coordinates_cartesian, (0),axis =0)   
       stanley = Stanley.LatControl(coordinates_cartesian)
-      AutoDrive.plotDubins(coordinates_cartesian,curr_pos)
+      #AutoDrive.plotDubins(coordinates_cartesian,curr_pos)
       prev_stter = 0
       k = 0
       
