@@ -7,9 +7,6 @@
 - Run this in the command line :
 > $WEBOTS_HOME/webots-controller --robot-name=vehicle path/to/controller/file [path-to-main.py]
 
-- If you run into issues while setting the Home environment variable, run this instead
->
-
 - If your problem persists, follow up on https://cyberbotics.com/doc/guide/running-extern-robot-controllers?tab-os=linux
 
 # World
